@@ -1,11 +1,12 @@
 <h1>Welcome</h1>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, fuga, enim, harum ipsum libero mollitia dolores corporis eligendi perspiciatis autem asperiores optio deserunt nihil laudantium excepturi consequatur cupiditate rerum modi.</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, ea, nisi culpa nemo quaerat adipisci possimus magnam neque veritatis deleniti provident saepe consequatur optio! Saepe magnam illo illum omnis nobis.</p>
+<p>This is the landing page for our blog application made using Ruby on Rails.</p>
+<p>This page is just a placeholder. Later on, we'll replace with the posts in our blog.
+<p>The current time is <%= @time %></p>
 
-
-<p> The Cuurent time is <%= @time %> </p>
-<p> The Cuurent time is <%= Time.now %> </p>
-
-<p> The Cuurent time is <%= @checfs.size %> </p>
-
-<%= link_to "NIDA","http://www.nida.ac.th/" %>
+<p>Our dessert recipes aer shared with love by the world
+top <%= @chefs.size %> chefs in <%= @time %></p>
+<ul>
+<% @chefs.each do |chef| %>
+  <li><%= chef %></li>
+<% end %>
+</us>

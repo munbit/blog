@@ -1,7 +1,7 @@
 class PagesController < ApplicationController
   def welcome
-     @checfs =['marn','tak','nart']
-     @time = Time.now
+    @chefs = ['Tim', 'John', 'Janes', 'Joe', 'Smith']
+    @time = Time.now
   end
   def about
   end
